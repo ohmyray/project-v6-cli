@@ -1,0 +1,50 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist",
+        "module": "ES6",
+        "target": "ES5",
+        "allowJs": true,
+        // "strict": true,
+        "jsx": "preserve",
+        "importHelpers": true,
+        "moduleResolution": "node",
+        "experimentalDecorators": true,
+        "skipLibCheck": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "sourceMap": true,
+        "baseUrl": ".",
+        "types": [
+            "node",
+            "jquery"
+        ],
+        "paths": {
+            "@/*": ["./src/*"],
+            "@c/*": ["./src/components/*"],
+            "@core/*": ["./src/core/*"],
+            "@pack/*": ["./src/packages/*"],
+            "@util/*": ["./src/util/*"],
+            "@style/*": ["./src/style/*"]
+        },
+        "lib": [
+            "esnext",
+            "dom",
+            "dom.iterable",
+            "scripthost",
+            "es5",
+            "es2015.promise"
+        ]
+    },
+    "include": [
+        "src/**/*.ts",
+        "src/**/*.tsx",
+        "src/**/*.vue",
+        "tests/**/*.ts",
+        "tests/**/*.tsx"
+    ],
+    "exclude": ["node_modules"],
+    "files": [
+        "typings/vue-shims.d.ts",
+        "typings/webgis.d.ts"
+    ]
+}

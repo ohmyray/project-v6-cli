@@ -1,0 +1,7 @@
+{
+    "version" : {
+        "sdk": "6.0.0.1",
+        "component": "6.0.0.1"
+    },
+    "branch" : "SI-WebGIS-V6"
+}
