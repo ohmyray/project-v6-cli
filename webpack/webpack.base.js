@@ -1,3 +1,4 @@
+const path = require('path');
 const paths = require('./paths');
 console.log(paths);
 

@@ -2,7 +2,8 @@
   "name": "webgis-components",
   "version": "1.0.0",
   "scripts": {
-    "dev": "webpack serve --config webpack/webpack.base.js",
+    "dev": "webpack serve --config webpack/webpack.production.js",
+    "base": "webpack serve --config webpack/webpack.base.js",
     "build": "webpack --config build/webpack.production.js --mode production",
     "build:web": "webpack --config build/webpack.pro.web.js --mode production",
     "build:mobile": "webpack --config build/webpack.pro.mobile.js --mode production"

@@ -15,7 +15,7 @@ configFiles.forEach(pathO => {
     const current = {};
     const config = JSON.parse(fs.readFileSync(appDirectory + '/config/' + pathO, "utf8"));
     for (const key in config) {
-        if (config.hasOwnProperty(key)) current[key] = path.join(appDirectory , 'module', type ,config[key]);
+        if (config.hasOwnProperty(key)) current[key] = path.join(appDirectory, 'module', type, config[key]);
     }
     configs[type] = current;
 })
